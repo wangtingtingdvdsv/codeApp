@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>发布文章</title>
+	<link rel="stylesheet" type="text/css" href="./css/sonCommon.css">
+	<link rel="stylesheet" type="text/css" href="./css/addBusiPage.css">
+</head>
+<body>
+	<header>
+		<div class="title">新增商家</div>
+	</header>
+	<div class="detailInfo">
+		<div>
+			<span class="star">*</span>
+			<span>商家名称：</span>
+			<input type="text" class="name" name="" placeholder="请填写商家名称"><br>
+		</div>
+		<div>
+			<span class="star">*</span>
+			<span>分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类：</span>
+			<select class="busiSort">
+				<option value="none" disabled selected>请选择商家分类</option>
+				<option value="one">1</option>
+				<option value="two">2</option>
+				<option value="three">3</option>
+			</select>
+			<br>
+		</div>
+		<div>
+			<span class="star">*</span>
+			<span>描&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;述：</span>
+			<textarea type="text" class="busiSummary" name="" placeholder="请输入商家描述"></textarea>
+			<br>
+		</div>
+		<div class="mapPoint">
+			<span class="star">*</span>
+			<span>地图标点：</span>
+			<input class="longitude" type="text" name="" placeholder="经度">
+			<input class="latitude" type="text"  name="" placeholder="纬度">
+
+			<br>
+		</div>
+		<div class="onloadPictureFunction">
+			<span class="star">*</span><span class="onloadPicture">上传图片：</span>
+			<div class="upload-content content">
+				<div class="content-img">
+		        	<ul class="content-img-list">
+		        		
+		        	</ul>
+		        	<div class="file">
+		        		<i class="ico-plus"></i>上传图片，支持jpg/png<input type="file" name="file" accept="image/*" id="upload">
+		        	</div>	
+		        </div>
+			</div>
+		</div>
+	</div>	
+	<div class="footerButton">
+		<button class="save" id="save">保存</button>
+		<button class="cancel">取消</button>
+	</div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/sonCommon.js"></script>
+<script src="js/addBusiPage.js"></script>
+</html>

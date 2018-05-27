@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title></title>
+</head>
+<body>
+    <table>
+        <tbody id="content">
+        <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+            </tr><tr>
+                <td><a>AB</a></td>
+                <td><a>CD</a></td>
+                <td><a>EF</a></td>
+                <td><a><div>GH</div></a></td>
+            </tr></tbody>
+    </table>    
+
+</body>
+<script type="text/javascript">
+var ele = document.getElementById('content')
+   getTextNode(ele);
+   function getTextNode(ele) {
+        
+        var nodes = ele.childNodes;
+
+//        console.log(nodes);
+       // console.log(nodes);
+       for(let i = 0; i < nodes.length; i++) {
+
+        if (nodes[i].nodeType == 3) {
+            if (nodes[i].nodeValue == 'GH') {
+                //console.log(nodes[i].);
+                var e = $(nodes[i]).parents("tr");
+                console.log(e[0]);
+            }
+           
+        } else if(nodes[i].nodeType === 1) {
+            getTextNode(nodes[i]);
+        }
+       // console.log(nodes[i].nodeName);
+          //  getTextNode(nodes[i]);
+       }
+       
+   }
+  
+
+</script>
+</html>

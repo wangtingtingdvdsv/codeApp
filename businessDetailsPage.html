@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css"
+	rel="stylesheet"/>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://mockjs.com/dist/mock.js"></script>
+	<script type="text/javascript" src="./js/mock.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/businessDetailsPage.css">
+</head>
+<!-- onresize="alert('请不要缩放浏览器，导致网页错误')"-->
+<body>
+	<div class="header">
+		<h2>校园知道MIS</h2>
+		<div class="nav">
+			<div class="background busiDetail">商家详情</div>
+			<div class="houseInfo">学住行信息</div>
+			<div class="campus">校园文章</div>
+			<div class="reportInfo">举报信息</div>
+		</div>
+		<img style="height: 5%; width: 5%;" class="logo" src="./image/logo.png">
+	</div>
+	<!--商家详情 -->
+	<div class="outerLayer businessDetails">
+		<div class="search">
+				<input class="searchBusiInput" type="text" name="" placeholder="请输入商家名称">
+				<img class="searchPic" src="image/search.png">
+		</div>
+		<div class="select">
+			<span>选择分类</span>
+			<select>
+		  		<option value="" disabled selected>吃/校园服务</option>
+			  	<option value="1">1</option>
+			  	<option value="2">2</option>
+			  	<option value="3">3</option>
+			</select>
+			<select>
+				<option value="" disabled selected>位置</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			</select>
+			<select>
+				<option value="" disabled selected>品类</option>
+			  	<option value="1">1</option>
+			  	<option value="2">2</option>
+			  	<option value="3">3</option>
+			</select>
+
+		</div>
+		<div class="buttongroup">
+			<div id="busiSearch"><button disabled="true" class="busiSearchButton">查询</button></div>
+			<div><button disabled="true" class="busireSetButton">重置</button></div>
+			<div id="addBusi">新增</div>
+		</div>
+		<div class="mainContent">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th style="width: 11%;">商家名称</th>
+						<th style="width:15%">分类</th>
+						<th style="width: 10%;">图片</th>
+						<th style="width: 12%;">星级(平均数)</th>
+						<th style="width: 13%">地图标点</th>
+						<th style="width: 25%;">描述</th>
+						<th >操作</th>
+					</tr>
+				</thead>
+				<tbody id="busiBody">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--学住兴信息-->
+	<div class="isShow house outerLayer">
+		<div class="search">
+				<input class="searchHouseInput" type="text" name="" placeholder="请输入住宿名称">
+				<img class="searchPic" src="image/search.png">
+		</div>
+		<div class="select">
+			<span>选择分类</span>
+			<select>
+		  		<option value="" disabled selected>学/住/兴</option>
+			  	<option value="1">1</option>
+			  	<option value="2">2</option>
+			  	<option value="3">3</option>
+			</select>
+		</div>
+		<div class="buttongroup">
+			<div id="houseSearch"><button disabled="true" class="houseSearchButton">查询</button></div>
+			<div><button disabled="true" class="housereSetButton">重置</button></div>
+			<div id="addHouse">新增</div>
+		</div>
+		<div class="mainContent">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>名称</th>
+						<th>分类</th>
+						<th>地图标点</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="houseBody">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--校园文章-->
+	<div class="isShow outerLayer campusArticle">
+		<button class="publish">发布</button>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th style="width: 5%;">序号</th>
+					<th style="width:15%">文章题目</th>
+					<th style="width: 10%;">图片</th>
+					<th style="width: 30%;">摘要</th>
+					<th>链接</th>
+					<th style="width: 10%;">操作</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+	</div>
+	<!--举报信息-->
+	<div class="isShow report outerLayer">
+		<div class="promise">
+			<p>我们承诺会对您的个人信息严格保密!</p>
+			<p>联系我们：</p>
+			<p>西电治安服务队QQ:3154481046</p>
+			<p>西电学生会QQ:2695895200</p>
+		</div>
+		<div class="reportContent">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th style="width: 10%">举报时间</th>
+						<th>店名</th>
+						<th>服务名称</th>
+						<th style="width: 15%;">侵权原因</th>
+						<th style="width: 15%">侵权说明</th>
+						<th>图片</th>
+						<th>姓名</th>
+						<th>学号</th>
+						<th style="width: 10%">联系方式</th>
+					</tr>
+				</thead>
+				<tbody id="reportbody">
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./js/businessDetailsPage.js"></script>
+</html>

@@ -1,0 +1,210 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	min-width: 1200px;
+	font-size: 15px;
+}
+/*公共样式*/
+.isShow{
+	display: none;
+}
+.outerLayer{
+	width: 80%;
+	margin: 0 auto;
+}
+/*导航部分*/
+.header h2{
+	font-weight: bold;
+	margin-left: 15%;
+	display: inline-block;
+	
+}
+.header{
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+a{
+	color: black;
+}
+.nav div{
+	font-size: 20px;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid black;
+	margin-right: 15px;
+}
+
+
+.nav{
+	display: inline-block;
+	display: flex;
+	justify-content: space-between;	
+}
+
+
+
+.background{
+	background-color: #F2F2F2;
+}
+/*校园文章*/
+.campusArticle{
+	margin-top: 20px;
+	
+}
+.table thead tr th{
+	border-color: black;
+}
+.table tbody tr td{
+	border-color: black;
+}
+.table{
+	border-color: black;	
+}
+.delete:hover{
+	color: blue;
+	cursor: pointer;
+}
+.modify:hover{
+	color: blue;
+	cursor: pointer;
+}
+.publish{
+	width: 120px;
+	height: 40px;
+	font-size: 25px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*商家详情*/
+/*搜索框*/
+.businessDetails{
+	margin-top: 20px;
+	
+}
+.search{
+	float: right;
+	display: inline-block;
+	border: 1px solid black;
+}
+.businessDetails:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.searchBusiInput{
+	width: 400px;
+	height: 33px;
+	font-size: 20px;
+	border:0;
+	outline: none;
+}
+.searchHouseInput{
+	width: 400px;
+	height: 33px;
+	font-size: 20px;
+	border:0;
+	outline: none;
+}
+
+.searchPic{
+	margin-top: 4px;
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin-right: 15px;
+}
+/*选择*/
+.select{
+	margin-top: 60px;
+	display: flex;
+	justify-content: flex-start;
+}
+.select select{
+	width: 20%;
+	height: 35px;
+	font-size: 15px;
+	border-radius: 7px;
+	margin-left: 15px;
+}
+.select span{
+	font-size: 15px;
+	margin-top: 4px;
+	margin-right: 0;
+}
+/*按钮*/
+.buttongroup{
+	margin-top: 20px;
+}
+.busiSearchButton:active{
+	background: #59B7E0;
+}
+.houseSearchButton:active{
+	background: #59B7E0;
+}
+.busireSetButton:active{
+	background: #59B7E0;
+}
+.housereSetButton:active{
+	background: #59B7E0;
+}
+.buttongroup div button{
+	width: 73px;
+	height: 32px;
+	background-color: #ffffff;
+	border: none;
+	outline: none;
+}
+.buttongroup div{
+	font-size: 18px;
+	width: 75px;
+	height: 35px;
+	margin-right: 18px;
+	border: 1px solid black;
+	border-radius: 4px;
+	float: right;
+	text-align: center;
+	line-height: 35px;
+}
+.buttongroup:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.buttongroup div{
+	cursor: pointer;
+}
+.buttongroup div:active{
+	background: #59B7E0;
+}
+
+/*表格*/
+.mainContent{
+	margin-top: 20px;
+}
+.table thead tr th{
+	border-color: black;
+}
+th{
+	border-color: black;
+}
+/*举报信息*/
+.promise{
+	margin-left: 15%;
+}
+.promise p{
+	font-size: 20px;
+	font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>发布文章</title>
+	<link rel="stylesheet" type="text/css" href="./css/sonCommon.css">
+	<link rel="stylesheet" type="text/css" href="./css/publishArticle.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://mockjs.com/dist/mock.js"></script>
+	<script type="text/javascript" src="./js/mock.js"></script>
+</head>
+<body>
+	<header>
+		<div class="title">发布文章</div>
+	</header>
+	<div class="detailInfo">
+		<div>
+			<span class="star">*</span>
+			<span>文章标题：</span>
+			<input type="text" class="name" name="" placeholder="请填写文章标题"><br>
+		</div>
+		<div>
+			<span class="star">*</span>
+			<span>摘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;要：</span>
+			<textarea class="summary" placeholder="请输入摘要"></textarea><br>
+		</div>
+		<div>
+			<span class="star">*</span>
+			<span>文章链接：</span>
+			<input type="text" class="articleLink" name="" placeholder="请输入文章链接"><br>
+		</div>
+		<div class="onloadPictureFunction">
+		
+			<span class="star">*</span><span class="onloadPicture">上传图片：</span>
+			<div class="upload-content content">
+				<div class="content-img">
+		        	<ul class="content-img-list">
+		        		
+		        	</ul>
+		        	<div class="file">
+		        		<i class="ico-plus"></i>上传图片，支持jpg/png<input type="file" name="file" accept="image/*" id="upload">
+		        	</div>	
+		        </div>
+			</div>
+		</div>
+	</div>	
+	<div class="footerButton">
+		<button class="save" id="save">保存</button>
+		<button class="cancel">取消</button>
+	</div>
+
+</body>
+
+<script src="js/sonCommon.js"></script>
+<script src="js/publishArticle.js"></script>
+</html>
